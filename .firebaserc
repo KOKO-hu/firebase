@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-8d65f": {
+      "hosting": {
+        "firebase": [
+          "angular-8d65f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-8d65f"
+  }
+}

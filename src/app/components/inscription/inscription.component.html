@@ -1,0 +1,51 @@
+<div class="d-flex justify-content-center">
+  <div class="card m-4 p-5 col-md-5">
+    <p class="h3 my-3 text-center">Inscription</p>
+    <div class="d-flex align-items-center justify-content-center">
+      <form [formGroup]="signformGroup">
+        <!--        <div class="col-md-12 my-2">
+          <label for="typeahead-format">Nom:</label>
+          <div>
+            <input
+              id="typeahead-format"
+              type="text"
+              class="form-control"
+              formControlName="nom"
+            />
+          </div>
+        </div> -->
+        <div class="col-md-12 my-2">
+          <label for="typeahead-format">Email:</label>
+          <input
+            id="typeahead-format"
+            type="text"
+            class="form-control"
+            formControlName="email"
+            placeholder="email"
+          />
+        </div>
+        <div class="col-md-12 my-2">
+          <label for="typeahead-format">Mot de passe:</label>
+          <input
+            id="typeahead-format"
+            type="text"
+            class="form-control"
+            formControlName="mdp"
+          />
+          <!--        <div *ngIf="mdp.touched && mdp.invalid" class="alert alert-danger"></div> -->
+          <!-- <div
+            *ngIf="signformGroup.controls['mdp'].status"
+            class="invalid-feedback"
+          >
+            <div>veillez si vous plait remplir le champs mot de passe</div>
+          </div> -->
+        </div>
+        <div class="my-3 mx-3">
+          <button class="btn btn-primary" (click)="register()">
+            enregistrer
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
